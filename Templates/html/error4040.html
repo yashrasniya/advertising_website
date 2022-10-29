@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Trispace:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Advertisement</title>
+</head>
+
+<body>
+    <div class="black">
+    <div class="contents">
+        <div class="navbar">
+            <img src="LOGO.png" id="logo" alt="Company logo" class="logo">
+            <nav>
+                <ul id="MenuList">
+                    <li><a href="index.html"> Home</a> </li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="menu-o.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="mid">
+            <h1 style="font-size: 1000%;">404 <br></h1>
+            <p> <h4>Page Not found<br></h4> </p>
+            <p><h5 style="color:#FFD700 ;">The resource requested could not be found on this server</h5></p>
+          
+        </div>
+
+       
+    </div>
+</div>
+    <script>
+        var MenuList = document.getElementById("MenuList");
+
+        MenuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (MenuList.style.maxHeight == "0px") {
+                MenuList.style.maxHeight = "185px";
+            }
+            else {
+                MenuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

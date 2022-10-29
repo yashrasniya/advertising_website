@@ -1,0 +1,273 @@
+
+body {
+    /* background-image: url('bg.jpg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75) , rgba(0, 0, 0, 0.75) ) , url('http://127.0.0.1:8000/static/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.black{
+    background-color: rgba(10, 10, 10, 0.5);
+    opacity: 0.8;
+}
+
+#menulist {
+    font-size: large;
+}
+
+#location {
+    display: inline;
+    padding: auto;
+    border: 1px solid #FFD700;
+    color: rgb(0, 0, 0);
+    width: 43%;
+}
+
+#search-icon {
+    width: 26px;
+    height: 18px;
+    margin-top: 5px;
+    border-radius: 70%;
+}
+
+#logo {
+    opacity: 1.0;
+    /* size: 100px; */
+}
+
+#h-type {
+    border: 1px solid #FFD700;
+    color: rgb(0, 0, 0);
+    width: 40%;
+}
+
+.mid {
+    text-align: center;
+    padding: 30px;
+    color: white;
+
+}
+
+.main {
+    background-color: #FFD700;
+    /* opacity: 0.5; */
+    border: 1px solid #FFD700;
+    border-radius: 60px;
+    margin: auto;
+    width: 50%;
+    display: block;
+    margin-top: 2%;
+    margin-left: 20%;
+    padding: 20px;
+
+
+}
+
+
+
+.main-inner {
+    margin: auto;
+    width: 50%;
+}
+
+.mid h1 {
+       font-size: 4vw; ;
+       color: #FFD700;
+}
+
+.mid h4 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 3.2vw;
+}
+
+.contents{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 20px 0px;
+    }
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 600;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+
+/* style start for index2.html */
+
+.box-outer {
+
+    margin: auto;
+
+    width: 50%;
+    height: 380px;
+    padding: 30px;
+}
+
+.box-inner {
+    background-color: rgb(253, 253, 253);
+    opacity: .8;
+    color: #FFD700;
+    border: 2px solid rgb(65, 255, 65);
+    border-radius: 5px;
+    display: block;
+    padding: 1px
+}
+
+.main-2 {
+    border: 1px solid rgb(65, 255, 65);
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    display: block;
+    margin-top: 1%;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+
+
+/* set form background colour*/
+.login-box{
+    padding-top: 25vh;
+}
+form{
+	background: #fff;
+    border: 1px solid #FFD700;
+
+}
+/* set padding and size of th form */
+.form-container{
+	border-radius: 10px;
+	padding: 30px;
+}
+
+
+
+/* style for product list  start */
+
+.pro_det h1{
+    color: #FFD700;
+}
+
+.pro_det h3{
+   color: antiquewhite;
+}
+
+.pad{
+    padding-bottom: 2%;
+    border-radius: 20px;
+}
+
+.index-pad{
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.marg{
+    margin-bottom: 5%;
+}
+
+
+/* for login page */
+
+.g-logo img{
+    size: 1px;
+    border-radius: 100%;
+}
+
+.login-pad{
+    padding-top: 50px;
+}
+/* for transaction */
+
+.tick-img{
+    border: 2px solid #FFD700 ;
+    border-radius: 100%;
+    padding: 0px;
+    margin: 5px;
+
+}
+
+
+/* for register page */
+
+.bor-rad{
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: #FFD700;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        z-index: 2;
+        opacity: 0.9;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: rgb(7, 7, 7);
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+
+    #MenuList {
+        overflow: hidden;
+        transition: 1.2s;
+    }
+}

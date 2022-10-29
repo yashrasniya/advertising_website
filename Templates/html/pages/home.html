@@ -1,0 +1,91 @@
+{% extends 'html/base.html' %}
+{%load static%}
+{% block content%}
+
+<div class="mid">
+            <h1>One Of The Outdoor Advertising Agency <br></h1>
+            <p> <br>
+            <h4>OOH Advertisement made easy<br></h4>
+            </p>
+            <p><span>
+                    <h4>Search Media. Check Availability. Book Online</h4>
+                </span></p>
+        </div>
+
+        <div class="border border-warning  index-pad col-sm-12 col-md-12 container" >
+
+
+            <div class="row justify-content-md-center row-cols-sm-3 ">
+                <div class="col border-warning "><select class="custom-select" id="city">
+                        <option selected value="0">Enter the city</option>
+					{% for i in city %}
+                        <option   value="{{i}}">{{i}}</option>
+					{% endfor %}
+
+                    </select>
+                </div>
+
+                <div class="col"><select class="custom-select" id="hoarding" >
+                        <option selected value="0">Enter hoarding type here</option>
+                        {% for i in Type %}
+                        <option  value="{{i}}">{{i}}</option>
+					{% endfor %}
+
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <a  onclick="f1()">
+
+                        <i class="fa-solid fa-magnifying-glass" style="font-size: 200%;color:aliceblue"></i>
+                    </a>
+                </div>
+            </div>
+            http://127.0.0.1:8080/
+<script>
+
+    function f1(){
+    city=document.getElementById('city').value
+    hoarding=document.getElementById('hoarding').value
+    if (city!='0' && hoarding!="0"){
+    //window.location.href.split('//')[1].split('/')[0]+
+        window.location.href='search?city='+city+'&type='+hoarding
+    }
+
+    }
+</script>
+
+
+
+
+
+        </div>
+{{Hoarding_data}}
+{% if Hoarding_data %}
+
+<div class="card-deck index-pad marg">
+    {%for i in Hoarding_data %}
+
+
+
+
+
+                <div class="card card-img-left">
+                    <span class="border border-warning">
+
+                        <img class="card-img-top" src="/media/{{ i.images.all.last }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.name}}</h5>
+                            <p class="card-text">{{i.city}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/about/{{i.name}}-{{i.id}}">
+                                <button type="button" class="btn btn-outline-warning">Read more</button></a>
+                        </div>
+                    </span>
+                </div>
+
+{%endfor%}
+    </div>
+{% endif %}
+
+{%endblock%}

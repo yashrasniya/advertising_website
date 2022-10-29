@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>about</title>
+</head>
+<body>
+{{id}}
+{% for i in images.all %}
+<img  src="/media/{{i.img}}" width="400" height="400">
+{%endfor %}
+{{id}}
+
+<a href="/create_payment_link/{{id}}"><input value="Book now"></a>
+<a href="/add_cart/{{id}}"><input value="add Cart"></a>
+</body>
+</html>
